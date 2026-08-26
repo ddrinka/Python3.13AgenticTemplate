@@ -1,4 +1,7 @@
 #!/bin/bash
 set -e
 
-pip3 install --user --upgrade --prefer-binary -r requirements.txt
+# uv installs to ~/.local/bin, which a non-interactive shell does not pick up.
+export PATH="$HOME/.local/bin:$PATH"
+
+uv sync
