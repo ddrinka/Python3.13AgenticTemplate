@@ -32,6 +32,9 @@ docstrings, Markdown, pull request bodies, agent briefs.
 
 **Don't**
 
+- Write "is the one ___ the ___ exists for", or any variant of that frame.
+  Banned everywhere: chat, commits, comments, code, docs. Say why the thing
+  matters in plain words instead.
 - Restate the request back.
 - Narrate your reasoning or critique yourself unless asked.
 - Put two em-dash asides in one sentence.
