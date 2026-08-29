@@ -4,9 +4,6 @@
 	"onCreateCommand": ["/bin/bash", "-c", ".devcontainer/on_create.sh"],
 	"updateContentCommand": ["/bin/bash", "-c", ".devcontainer/on_update.sh"],
 	"postCreateCommand": "",
-	"mounts":[
-		"source=${env:HOME}${env:USERPROFILE}/.claude-policy,target=/etc/claude-code/managed-settings.d,type=bind,readonly,bind-create-src"
-	],
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -20,7 +17,8 @@
 		"ghcr.io/devcontainers/features/docker-in-docker:4": {
 			"moby": false
 		},
-		"ghcr.io/devcontainers/features/node:2.1.0": {},
-		"ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
+		"ghcr.io/anthropics/devcontainer-features/claude-code:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/node:2": {}
 	}
 }
