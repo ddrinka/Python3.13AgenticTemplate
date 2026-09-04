@@ -81,5 +81,5 @@ Thumbs.db
 # pyright
 pyrightconfig.json
 
-# Claude Code: per-user settings stay local, agent definitions are committed
+# Claude Code: per-user settings stay local
 .claude/settings.local.json
