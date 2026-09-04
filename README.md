@@ -1,11 +1,12 @@
 # Python 3.13 Agentic Template
 
-A GitHub template for a Python 3.13 project built with Claude Code and an agent team.
-The dev container comes from [ddrinka/DevContainer](https://github.com/ddrinka/DevContainer),
-which `.devcontainer/devcontainer.json` clones into `.devcontainer/base` before the
-container builds. That base supplies the image, Claude Code, the agent definitions, and
-the shared `AGENTS.md` conventions; this repository adds only `on_update.sh`, which runs
-`uv sync`, and the Docker-in-Docker feature.
+This repository is a GitHub template for Python 3.13 projects built with Claude Code and
+an agent team. The dev container comes from
+[ddrinka/DevContainer](https://github.com/ddrinka/DevContainer). Before the container
+builds, `.devcontainer/devcontainer.json` clones that repository into
+`.devcontainer/base`. The base supplies the image, Claude Code, the agent definitions,
+and the shared `AGENTS.md` conventions. This repository adds only two things:
+`on_update.sh`, which runs `uv sync`, and the Docker-in-Docker feature.
 
 Dependencies go through `uv` and are pinned in `pyproject.toml` and `uv.lock`.
 
